@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 import rospy
-from sensor_msgs import Laserscan
+from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 def callback(msg):
     if msg.ranges[360]>1:
