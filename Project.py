@@ -11,9 +11,9 @@ def callback(msg):
         move.angular.z=0
     pub.publish(move)
     
-rospy.init_node('moverobot')
-pub=rospy.Publisher('cmd_vel',Twist,queue_size=1)
-sub=rospy.Subscriber('/scan',LaserScan,callback)
+rospy.init_node("moverobot")
+pub=rospy.Publisher("cmd_vel",Twist,queue_size=1)
+sub=rospy.Subscriber("/scan",LaserScan,callback)
 move=Twist()
 
 rospy.spin()
