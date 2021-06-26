@@ -1,1 +1,1 @@
-# Obstacle-Avoidance-Wall-
+# Obstacle-Avoidance-Wall-Using the concepts of publishers,subscribers,topics and the type of messages published in them I wrote an optimised code for the turtlebot robot to avoid the wall. Using the get_laser_full function I obtained all the 720 values from extreme right to extreme left. Then I called the move_straight function for the arguments which were >=30 m and called the stop_robot function for the arguments which were <30 m(middle values).In this manner the turtlebot was able to avoid the obstacle in front of it. (Wall)
